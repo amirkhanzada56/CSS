@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Selectors</title>
+	<style>
+		/* CSS Selectors */
+
+		/* Universal Selector */
+		*{
+			color: red;
+		}
+	
+		/* Element Selector */
+		h1{
+			color: blue;
+		}
+		
+		/* Class Selector */
+		.section{
+			color: green;
+		}
+
+		/* Descendent Selector */
+		.section p{
+			color: purple;
+		}
+
+		/* Id Selector */
+		#para1{
+			color: orange;s
+		}
+
+		/* Group Selector */
+		p, .section{
+			color: red;
+		}
+
+		/* Pseudo Class */
+		a:hover{
+			color: blue;
+		}
+
+		/* Pseudo Element */
+		.section #para2::first-letter{
+			font-size: 30px;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Amir Khan</h1>
+	<p>I am a Web Developer</p>
+
+	<div class="section">
+		This is the section
+		<p id="para1">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+		galley of type and scrambled it to make a type ...</p>
+
+		<p id="para2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+		galley of type and scrambled it to make a type ...</p>
+	</div>
+
+	<a href="https://www.google.com">Open Google</a>
+
+</body>
+</html>
