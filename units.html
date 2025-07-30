@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Units in CSS</title>
+	<style>
+		/* Absolute Units (px, in, cm, pt) */
+		
+		html{
+			font-family: arial;
+			font-size: 62.5%;	
+		}
+
+		h1{
+			font-size: 40px;
+		}
+
+		/* Relative Units (%, em, rem) */
+	
+		.parent{
+			border: 2px solid black;
+			width: 200px;
+			height: 200px;
+		}
+
+		.child{
+			border: 2px solid black;
+			width: 50%; 
+			height: 50%;
+		}	
+		
+		p{
+			font-size: 2rem;
+		}
+		
+		ul{
+			font-size: 10px;
+		}
+
+		ul li{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Amir Khan</h1>
+		
+	<p>Contrary to popular belief, Lorem Ipsum is not simply random 			text.It has roots in a piece of classical Latin literature from 45 			BC, making it over 2000 years old.</p>
+
+	<ul>
+		<li>Amir Khan</li>
+		<li>Amir Khan</li>
+		<li>Amir Khan</li>
+	</ul>
+	
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+		
+</body>
+</html>
