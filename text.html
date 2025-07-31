@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Properties</title>
+	<style>
+		/* Text Properties */
+
+		h1{
+			text-align: center;
+			text-decoration: 2px double red underline;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		
+		p{
+			text-align: justify;
+			text-decoration: 2px solid blue line-through;
+			text-transform: lowercase;
+			line-height: 1.5;
+			word-spacing: 2px;
+		}
+
+		h2{
+			text-align: right;
+			text-decoration: 2px dotted green overline;
+			text-transform: capitalize;
+		}
+
+		h3{
+			text-align: left;
+			text-decoration: 2px wavy purple underline;
+			text-transform: uppercase;
+		}
+		
+		a{
+			text-decoration: none;
+		}
+		
+		#shadow1{
+			text-decoration: none;
+			text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+		}
+
+		#shadow2{
+			text-decoration: none;
+			text-shadow: 2px 2px 2px red, 4px 4px 2px blue;
+		}
+
+		#para2::first-letter{
+			text-transform: uppercase;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Amir Khan</h1>
+
+	<p>This is the text. This is the text. This is the text. This is the text.
+	This is the text. This is the text. This is the text. This is the text.
+	This is the text. This is the text. This is the text. This is the 			text. This is the text. This is the text. This is the text.</p>
+
+	<h2>Amir Khan</h2>
+
+	<h3>Amir Khan</h3>
+	
+	<a href="https://www.google.com">Google</a>
+
+	<h1 id="shadow1">Amir Khan Web Developer</h1>
+
+	<h1 id="shadow2">Amir Khan Web Developer</h1>
+
+	<p id="para2">This is the text. This is the text. This is the text. This 		is the text. This is the text. This is the text. This is the text. This is 	the text.This is the text. This is the text. This is the text. This is the 	text. This is the text. This is the text. This is the text.</p>
+
+</body>
+</html>
