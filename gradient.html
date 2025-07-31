@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradient in CSS</title>
+	<style>
+		/* Gradient in CSS */
+
+		/* Linear Gradient */
+
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			background-image: linear-gradient(
+  				to right top,
+ 				rgba(5, 25, 55, 0.9),
+  				rgba(0, 77, 122, 0.9),
+  				rgba(0, 135, 147, 0.9),
+  				rgba(0, 191, 114, 0.9),
+  				rgba(168, 235, 18, 0.9)),
+			url(images/babar-pic.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			border: 2px solid black;
+			margin: 10px;
+		}
+		#box1{
+			background: linear-gradient(to right, red, yellow);
+			background: linear-gradient(90deg, red, yellow);
+			background: repeating-linear-gradient(to right, red, 			yellow 20px);
+		}
+		#box2{
+			background: linear-gradient(to bottom, red, yellow);
+			background: linear-gradient(180deg, red, yellow);
+		}
+		#box3{
+			background: linear-gradient(to bottom left, red, yellow);
+			background: linear-gradient(225deg, red, yellow);
+		}
+		#box4{
+			background: linear-gradient(to top left, red, yellow);
+			background: linear-gradient(315deg, red, yellow);
+		}
+
+		/* Radial Gradient */
+		
+		#box5{
+			background: radial-gradient(circle, red, yellow);
+			background: radial-gradient(circle, red 20%, yellow 100%);
+		}
+		#box6{
+			background: radial-gradient(ellipse, red, yellow);
+		}
+		#box7{
+			background: repeating-radial-gradient(circle, red, yellow 20px);
+		}
+		#box8{
+			background: radial-gradient(
+				circle at center, 
+				#ff5733 0%,
+				#ffc300 20%,
+				#ff5733 40%,
+				#2980b9 60%,
+				#33ff57 80%, 
+				#2980b9 100%);
+		}
+	</style>
+</head>	
+<body>
+	<div id="box1"></div>
+
+	<div id="box2"></div>
+
+	<div id="box3"></div>
+
+	<div id="box4"></div>
+
+	<div id="box5"></div>
+
+	<div id="box6"></div>
+
+	<div id="box7"></div>
+
+	<div id="box8"></div>
+</body>
+</html>
