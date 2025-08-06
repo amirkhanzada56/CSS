@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Combinators in CSS</title>
+	<style>
+		/* Combinators in CSS */
+		
+		/* Descendent Selector */
+		
+		div li{
+			color: red;	
+		}
+
+		/* Child Selector */
+		
+		div > ul > li{
+			color: purple;
+		}
+
+		div > ol > li{
+			color: purple;
+		}
+
+		/* Adjacent Sibling Selector */
+		
+		div > ul > ol > p + li{
+			color: green;
+		}
+
+		/* General Sibling Selector */
+		
+		div > ol > ul > p ~ li{
+			color: blue;
+		}
+
+		div > ul + ol > li{
+			color: blue;
+		}
+
+		div > ol + p{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			
+			<ol>
+				<p>This is a paragrpah.</p>
+
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+			</ol>
+		</ul>
+		<ol>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+
+			<ul>
+				<li>Amir Khan</li>
+
+				<p>This is a paragraph.</p>
+
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+			</ul>
+		</ol>
+		<p>This is the paragraph</p>
+		<ol>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+			<li>Amir Khan</li>
+
+			<ul>
+				<li>Amir Khan</li>
+
+				<p>This is a paragraph.</p>
+
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+				<li>Amir Khan</li>
+			</ul>
+		</ol>
+	</div>
+</body>
+</html>
